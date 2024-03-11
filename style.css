@@ -1,22 +1,147 @@
-/* Resetting default margin and padding */
- {
-
-
-}
-
-body {
+/* Reset default margin and padding */
+* {
     margin: 0;
-    padding: 0;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-/* Styling the heading */
-h1 {
-    color: blue;
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background: rgba(255, 255, 255, 0.5); /* Glass effect background color */
+}
+
+/* Header styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: right;
+    border: 1px solid #333;
+    padding: 20px;
+}
+
+/* Navigation styles */
+.nav {
+    background-color: blue;
+    color: white;
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        overflow: hidden;
+
+        li {
+            border: 1px solid #333;
+            padding: 10px;
+            margin: 5px;
+            box-shadow: 2px 2px 5px #333;
+            transition: box-shadow 0.3s;
+
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
+
+            &.active {
+                box-shadow: 5px 5px 10px #333;
+                background-color: blue;
+                color: white;
+            }
+        }
+    }
+}
+
+/* Portfolio heading styles */
+#portfolio-heading {
     font-size: 24px;
 }
 
-/* Styling a class */
-.my-class {
-    background-color: lightgray;
-    padding: 10px;
+/* Main styles */
+main {
+    padding: 20px;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 30px; /* Increased margin between sections */
+    height: 300px; /* Set the height as needed */
+    overflow: auto; /* Enable scrolling if content exceeds the height */
+
+    /* Work section styles */
+    &.two {
+        #work-heading {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #work-content {
+            margin-top: 10px; /* Adjusted margin-top value */
+            border: 1px solid #333;
+            padding: 10px;
+
+            h3 {
+                margin-bottom: 5px;
+                text-align: right;
+            }
+
+            ul {
+                list-style-type: none;
+                border: 1px solid #333;
+            }
+        }
+
+        #github-link {
+            background-color: blue;
+            box-shadow: 5px 5px 5px #333;
+            margin-top: 10px;
+            border: 1px solid #333;
+            padding: 10px;
+
+            h3 {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    /* Resume section styles */
+    &.three {
+        margin-top: 150px; /* Decreased margin-top value */
+        margin-bottom: 50px; /* Increased margin between the Work and Resume sections */
+        height: 260px;
+    }
+}
+
+/* Footer styles */
+.contact {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+
+    #contact-heading {
+        font-size: 24px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 5px;
+
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+    }
 }
