@@ -22,7 +22,7 @@ body {
 
 /* Make the image smaller */
 .header img {
-    max-width: 100px; /* Set the maximum width of the image */
+    max-width: 200px; /* Set the maximum width of the image */
     height: auto; /* Maintain aspect ratio */
     align-items: left;
 }
@@ -53,8 +53,8 @@ section {
     padding: 5px; /* Decreased padding */
     height: 80px; /* Decreased height */
     margin: 10px 5px; /* Decreased margin for spacing */
-    margin-bottom:100px;
-    
+    margin-bottom:120px;
+    margin-top:120px;
    
 }
 
@@ -67,11 +67,12 @@ section {
     border: px solid rgba(0, 0, 0, 0.2); /* Slightly darker border for contrast */
     
     color: #333; /* Text color */
-    width: 120px; /* Decreased width */
+    width: 100%; /* Decreased width */
     padding: 5px; /* Decreased padding */
-    height: 80px; /* Decreased height */
-    margin: 10px 5px; /* Decreased margin for spacing */
+    height: 10px; /* Decreased height */
+     /* Decreased margin for spacing */
     margin-bottom:100px;
+    align-items:center;
     }
 
 
