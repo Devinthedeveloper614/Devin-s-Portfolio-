@@ -28,7 +28,7 @@ body {
 }
 /* Section styles */
 section {
-    background: rgba(255, 255, 255, 0.8); /* Smoky white background color */
+    background:rgb(247 248 251 / 80%); /* Smoky white background color */
     border: 1px solid rgba(0, 0, 0, 0.1); /* Light border */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
     color: #333; /* Text color */
@@ -53,8 +53,8 @@ section {
     padding: 5px; /* Decreased padding */
     height: 80px; /* Decreased height */
     margin: 10px 5px; /* Decreased margin for spacing */
-    margin-bottom:120px;
-    margin-top:120px;
+    margin-bottom:100px;
+    margin-top:160px;
    
 }
 
@@ -68,10 +68,11 @@ section {
     
     color: #333; /* Text color */
     width: 100%; /* Decreased width */
-    padding: 5px; /* Decreased padding */
-    height: 10px; /* Decreased height */
+     /* Decreased padding */
+    height: 1px; /* Decreased height */
      /* Decreased margin for spacing */
     margin-bottom:100px;
+    margin-top:10px;
     align-items:center;
     }
 
