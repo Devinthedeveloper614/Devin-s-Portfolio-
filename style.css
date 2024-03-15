@@ -15,7 +15,7 @@ body {
 .header {
     background-color: #333;
     color: #fff;
-    text-align: right;
+    text-align: left;
     border: 1px solid #333;
     padding: 10px; /* Decreased padding */
 }
@@ -24,6 +24,7 @@ body {
 .header img {
     max-width: 100px; /* Set the maximum width of the image */
     height: auto; /* Maintain aspect ratio */
+    align-items: left;
 }
 /* Section styles */
 section {
@@ -31,41 +32,54 @@ section {
     border: 1px solid rgba(0, 0, 0, 0.1); /* Light border */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
     color: #333; /* Text color */
-    padding: 10px; /* Decreased padding */
+    padding: 10px; /* Decreased padding to decrease height */
     margin: 10px 5px; /* Decreased margin for spacing */
-    border-radius: 10px; /* Rounded corners */
     overflow: auto; /* Enable scrolling */
-    
+    width:100%;
 }
-.work img {
-    display: block; /* Ensures images are displayed as block elements */
-    margin: 0 auto; /* Centers the images horizontally */
-}
+
+     
+
+
+
 
 /* Link styles */
 .github-link {
     background: rgba(255, 255, 255, 0.9); /* Light background color for a glass effect */
-    border: 1px solid rgba(0, 0, 0, 0.2); /* Slightly darker border for contrast */
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    border: px solid rgba(0, 0, 0, 0.2); /* Slightly darker border for contrast */
+    
     color: #333; /* Text color */
     width: 120px; /* Decreased width */
     padding: 5px; /* Decreased padding */
     height: 80px; /* Decreased height */
     margin: 10px 5px; /* Decreased margin for spacing */
-    border-radius: 10px; /* Rounded corners */
-    transform: perspective(500px) rotateX(10deg); /* 3D effect with rotation */
-    transition: transform 0.5s; /* Smooth transition on hover */
+    margin-bottom:100px;
+    
+   
 }
 
 .github-link:hover {
     transform: perspective(500px) rotateX(-10deg); /* Reverse rotation on hover */
 }
 
+    .work-content{
+        background: rgba(255, 255, 255, 0.9); /* Light background color for a glass effect */
+    border: px solid rgba(0, 0, 0, 0.2); /* Slightly darker border for contrast */
+    
+    color: #333; /* Text color */
+    width: 120px; /* Decreased width */
+    padding: 5px; /* Decreased padding */
+    height: 80px; /* Decreased height */
+    margin: 10px 5px; /* Decreased margin for spacing */
+    margin-bottom:100px;
+    }
+
+
 /* Header styles */
 .header {
     background-color: #333;
     color: #fff;
-    text-align: right;
+    text-align: left;
     border: 1px solid #333;
     padding: 10px; /* Decreased padding */
 }
@@ -100,6 +114,15 @@ section {
             }
         }
     }
+}
+.work-content p {
+    display: flex;
+    flex-direction: row;
+    width:100%
+}
+
+.work-content p b {
+    margin-right: 200px;
 }
 
 /* Portfolio heading styles */
